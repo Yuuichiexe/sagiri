@@ -85,12 +85,8 @@ PM_START_TEXT = """
 ────「 [Sʜᴀɴᴋs【天皇】]({}) 」────
 やあ *"How did I end up following a Captain like this" {} - San!*
 
-*I Aᴍ Sʜᴀɴᴋs【天皇】 Aɴ Aɴɪᴍᴇ Tʜᴇᴍᴇ Bᴀsᴇᴅ Gʀᴏᴜᴘ Mᴀɴᴀɢᴇᴍᴇɴᴛ Bᴏᴛ Bᴜɪʟᴛ Tᴏ Mᴀɴᴀɢᴇ Yᴏᴜʀ Gʀᴏᴜᴘ Jᴜsᴛ Lɪᴋᴇ A Eᴍᴘᴇʀᴏʀ Dᴏᴇs Iɴ Tʜᴇ Gʀᴀɴᴅ Lɪɴᴇ!
-
-Nᴏᴡ Tʜᴀᴛ Yᴏᴜ Pᴏɪɴᴛᴇᴅ Tʜᴇ Gᴜɴ, Wᴏᴜʟᴅ Yᴏᴜ Rɪsᴋ Yᴏᴜʀ Lɪғᴇ Fᴏʀ Iᴛ!!
-
-
-*
+*I am Shanks, also known as "Red Haired Shanks", I am The captain of The Red Hair Pirates.
+Now That You Pointed The Gun, Would You Risk Your Life For It?!*
 
 ❍ *Version* : 3.10.6
 ❍ *Council Uptime* : {}
