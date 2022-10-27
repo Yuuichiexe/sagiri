@@ -82,9 +82,15 @@ def get_readable_time(seconds: int) -> str:
 
 
 PM_START_TEXT = """
-────「 [Roronoa Zoro]({}) 」────
+────「 [Sʜᴀɴᴋs【天皇】]({}) 」────
 やあ *"How did I end up following a Captain like this" {} - San!*
-* I am Roronoa Zoro, also known as "Pirate Hunter" Zoro, I am a combatant of the Straw Hat Pirates*
+
+*I Aᴍ Sʜᴀɴᴋs【天皇】 Aɴ Aɴɪᴍᴇ Tʜᴇᴍᴇ Bᴀsᴇᴅ Gʀᴏᴜᴘ Mᴀɴᴀɢᴇᴍᴇɴᴛ Bᴏᴛ Bᴜɪʟᴛ Tᴏ Mᴀɴᴀɢᴇ Yᴏᴜʀ Gʀᴏᴜᴘ Jᴜsᴛ Lɪᴋᴇ A Eᴍᴘᴇʀᴏʀ Dᴏᴇs Iɴ Tʜᴇ Gʀᴀɴᴅ Lɪɴᴇ!
+
+Nᴏᴡ Tʜᴀᴛ Yᴏᴜ Pᴏɪɴᴛᴇᴅ Tʜᴇ Gᴜɴ, Wᴏᴜʟᴅ Yᴏᴜ Rɪsᴋ Yᴏᴜʀ Lɪғᴇ Fᴏʀ Iᴛ!!
+
+
+*
 
 ❍ *Version* : 3.10.6
 ❍ *Council Uptime* : {}
@@ -93,19 +99,19 @@ PM_START_TEXT = """
 """
 
 PHOTO = (
-      "https://telegra.ph/file/4a4b4cf7ae29499194051.jpg",
-      "https://telegra.ph/file/b07a9cb3cca0ae94edd26.jpg",
-      "https://telegra.ph/file/e15898b918faa321e77c6.jpg",
-      "https://telegra.ph/file/6c0574f4cfdb4c7f0fa4c.jpg",
+      "https://telegra.ph/file/0d0676fcd6d063088e534.jpg",
+      "https://telegra.ph/file/2c19b1dcd71f111f39cef.jpg",
+      "https://telegra.ph/file/c813aa4a73cbe89ec5e5d.jpg",
+      "https://telegra.ph/file/9e1b13321a69da7cc631d.jpg",
 )
 
 buttons = [
     [
-        InlineKeyboardButton(text="ᴀᴅᴅ ᴍᴇ", url="t.me/ZoroRobot?startgroup=new"),
+        InlineKeyboardButton(text="ᴀᴅᴅ ᴍᴇ", url="t.meShanksRobot?startgroup=new"),
     ],
     [
-        InlineKeyboardButton(text="sᴜᴘᴘᴏʀᴛ", url="t.me/NexusXSupport"),
-        InlineKeyboardButton(text="ᴜᴘᴅᴀᴛᴇs", url="t.me/ZoroUpdates"),
+        InlineKeyboardButton(text="sᴜᴘᴘᴏʀᴛ", url="t.me/Shanks_Support"),
+        InlineKeyboardButton(text="ᴜᴘᴅᴀᴛᴇs", url="t.me/Shanks_Updates"),
     ],
     [
         InlineKeyboardButton(text="ᴍᴏʀᴇ ᴏᴘᴛɪᴏɴs", callback_data="Kaguya_"),
@@ -115,8 +121,8 @@ buttons = [
 HELP_STRINGS = """
 Click on the button bellow to get description about specifics command."""
 
-KAGUYA_IMG = "https://telegra.ph/file/bf2215fc9341575efb0aa.jpg"
-KaguyaSTART = "https://telegra.ph/file/16b94be672eb5878cdd6d.mp4"
+KAGUYA_IMG = "https://telegra.ph/file/df3949ffa67e954323e5e.jpg"
+KaguyaSTART = "https://telegra.ph/file/52715f72b6d72144e5790.mp4"
 
 
 
@@ -230,14 +236,14 @@ def start(update: Update, context: CallbackContext):
                 disable_web_page_preview=False,
             )
     else:
-        update.effective_message.reply_text("[Kon'ichiwa Am Kaguya Shinomiya I'll Protect You From The Guilty](https://telegra.ph/file/02ff19d802c4ce367dd1c.jpg)",
+        update.effective_message.reply_text("[Orewa Akagami no Shanks!](https://telegra.ph/file/0e2c61b5d372354e6c636.jpg)",
 reply_markup=InlineKeyboardMarkup(
                     [
                         [
                             InlineKeyboardButton(
-                                "sᴜᴘᴘᴏʀᴛ", url=f"https://t.me/NexusXSupport"),
+                                "sᴜᴘᴘᴏʀᴛ", url=f"https://t.me/Shanks_Support"),
                             InlineKeyboardButton(
-                                "ᴜᴘᴅᴀᴛᴇs", url=f"https://t.me/ZoroUpdates")
+                                "ᴜᴘᴅᴀᴛᴇs", url=f"https://t.me/Shanks_Updates")
                         ],
                     ]
                 ),
@@ -312,7 +318,7 @@ def Kaguya_about_callback(update, context):
     query = update.callback_query
     if query.data == "Kaguya_":
         query.message.edit_text(
-            text="⤀ Hoi I'm Kaguya Shinomiya, a powerful group management bot built to help you manage your group easily. ⬴"
+            text="⤀ Hey I am Shanks, a powerful group management bot built to help you manage your group easily. ⬴"
             "\n➢ I can restrict users."
             "\n➢ I can greet users with customizable welcome messages and even set a group's rules."
             "\n➢ I have an advanced anti-flood system."
@@ -431,7 +437,7 @@ def about_credits(update, context):
     if query.data == "about_credits":
         query.message.edit_text(
             text="""  
-  *⤀ Credits for Zoro ⬴*
+  *⤀ Credits for Shanks ⬴*
 
   Here Developers Making And Give Inspiration For Made The Kaguya Robot""",
             parse_mode=ParseMode.MARKDOWN,
@@ -439,10 +445,10 @@ def about_credits(update, context):
             reply_markup=InlineKeyboardMarkup(
                 [
                  [
-                        InlineKeyboardButton(text="Unknown", url="https://t.me/XtheAnonymous"),
+                        InlineKeyboardButton(text="Rishu", url="https://t.me/CuteRishu"),
                  ],
                  [
-                        InlineKeyboardButton(text="XULTIM8", url="https://t.me/XULTIM8"),
+                        InlineKeyboardButton(text="Zoro", url="https://t.me/IfItIsntZoro"),
                  ], 
                  [
                     InlineKeyboardButton(text="ʙᴀᴄᴋ", callback_data="Kaguya_")
@@ -874,7 +880,7 @@ def main():
         try:
             dispatcher.bot.sendMessage(
                 f"@{SUPPORT_CHAT}", 
-                f"""[Am Back to my job](https://telegra.ph/file/a59450b213a009c20518d.jpg)""",
+                f"""[Ready To sail](https://telegra.ph/file/8f2641bc79d9b28a275e2.jpg)""",
                 parse_mode=ParseMode.MARKDOWN,
 
             reply_markup=InlineKeyboardMarkup(
@@ -885,9 +891,9 @@ def main():
 
                        InlineKeyboardButton(
 
-                             text="[► Summon Me ◄]",
+                             text="[► Let's fight ◄]",
 
-                             url=f"t.me/ZoroRobot?startgroup=true"),
+                             url=f"t.me/ShanksRobot?startgroup=true"),
 
 
                      ] 
