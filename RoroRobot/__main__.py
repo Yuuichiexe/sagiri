@@ -107,7 +107,7 @@ PHOTO = (
 
 buttons = [
     [
-        InlineKeyboardButton(text="ᴀᴅᴅ ᴍᴇ", url="t.meShanksRobot?startgroup=new"),
+        InlineKeyboardButton(text="ᴀᴅᴅ ᴍᴇ", url="t.me/shanksRobot?startgroup=new"),
     ],
     [
         InlineKeyboardButton(text="sᴜᴘᴘᴏʀᴛ", url="t.me/Shanks_Support"),
@@ -334,7 +334,7 @@ def Kaguya_about_callback(update, context):
                     InlineKeyboardButton(text="ɴᴏᴛᴇs", callback_data="about_notes"),
                  ],
                  [
-                    InlineKeyboardButton(text="ꜱᴜᴘᴘᴏʀᴛ", url="t.me/NexusXSUPPORT"),
+                    InlineKeyboardButton(text="ꜱᴜᴘᴘᴏʀᴛ", url="t.me/Shanks_SUPPORT"),
                     InlineKeyboardButton(text="ᴄʀᴇᴅɪᴛs", callback_data="about_credits"),
                  ],
                  [ 
@@ -367,7 +367,7 @@ def about_admin(update, context):
             text="""  
   *⤀ Let's make your group bit effective ⤀*
 
-  Congragulations, Zoro Robot now ready to manage your group.
+  Congragulations, Shanks Robot now ready to manage your group.
 
   *Admin Tools*
   Basic Admin tools help you to protect and powerup your group.
