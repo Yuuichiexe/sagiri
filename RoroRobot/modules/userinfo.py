@@ -301,19 +301,19 @@ def info(update: Update, context: CallbackContext):
     disaster_level_present = False
 
     if user.id == OWNER_ID:
-        text += "\n\nThe Disaster level of this person is 'President'."
+        text += "\n\nThe Disaster level of this person is 'Emperor'."
         disaster_level_present = True
     elif user.id in DEV_USERS:
-        text += "\n\nThis user is member of 'Vice-President'."
+        text += "\n\nThis user is member of 'Fleet Admiral'."
         disaster_level_present = True
     elif user.id in DRAGONS:
-        text += "\n\nThe Disaster level of this person is 'Treasurer'."
+        text += "\n\nThe Disaster level of this person is 'Admiral'."
         disaster_level_present = True
     elif user.id in DEMONS:
-        text += "\n\nThe Disaster level of this person is 'Secretary'."
+        text += "\n\nThe Disaster level of this person is 'Vice Admiral'."
         disaster_level_present = True
     elif user.id in TIGERS:
-        text += "\n\nThe Disaster level of this person is 'Employee'."
+        text += "\n\nThe Disaster level of this person is 'Rear admiral'."
         disaster_level_present = True
     elif user.id in WOLVES:
         text += "\n\nThe Disaster level of this person is 'Council Member'."
@@ -353,9 +353,9 @@ def info(update: Update, context: CallbackContext):
                     [
                         [
                             InlineKeyboardButton(
-                                "Health", url="https://t.me/ZoroUpdates/2"),
+                                "Health", url="https://t.me/shanks_updates/6"),
                             InlineKeyboardButton(
-                                "Disaster", url="https://t.me/ZoroUpdates/2")
+                                "Disaster", url="https://t.me/shanks_updates/2")
                         ],
                     ]
                 ),
@@ -371,9 +371,9 @@ def info(update: Update, context: CallbackContext):
                     [
                         [
                             InlineKeyboardButton(
-                                "Health", url="https://t.me/ZoroUpdates/2"),
+                                "Health", url="https://t.me/Shanks_Updates/6"),
                             InlineKeyboardButton(
-                                "Disaster", url="https://t.me/ZoroUpdates/2")
+                                "Disaster", url="https://t.me/Shanks_Updates/2")
                         ],
                     ]
                 ),
@@ -445,9 +445,9 @@ def set_about_me(update: Update, context: CallbackContext):
 
 @sudo_plus
 def stats(update: Update, context: CallbackContext):
-    stats = "<b>╔═━「 Current Zoro Statistics 」</b>\n" + "\n".join([mod.__stats__() for mod in STATS])
+    stats = "<b>╔═━「 Current Shanks Statistics 」</b>\n" + "\n".join([mod.__stats__() for mod in STATS])
     result = re.sub(r"(\d+)", r"<code>\1</code>", stats)
-    result += "\n<b>╘═━「 Powered By AOGIRI 」</b>"
+    result += "\n<b>╘═━「 Powered By QUINCY 」</b>"
     update.effective_message.reply_text(
         result,
         parse_mode=ParseMode.HTML, 
