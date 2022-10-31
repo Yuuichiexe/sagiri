@@ -67,3 +67,4 @@ natsort
 html5lib
 yt-dlp
 tswift
+PhoenixScanner
